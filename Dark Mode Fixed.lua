@@ -1,6 +1,5 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
--- Create ClientModules folder if it doesn't exist
 local clientModules = ReplicatedStorage:FindFirstChild("ClientModules")
 if not clientModules then
     clientModules = Instance.new("Folder")
@@ -8,7 +7,6 @@ if not clientModules then
     clientModules.Parent = ReplicatedStorage
 end
 
--- Find ModulesClient folder
 local modulesClient = ReplicatedStorage:FindFirstChild("ModulesClient")
 if modulesClient then
     local moduleEvents = modulesClient:FindFirstChild("Module_Events")
